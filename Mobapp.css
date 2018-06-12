@@ -1,0 +1,40 @@
+body{
+  font-family:sans-serif;
+  background: linear-gradient(20deg,pink,purple);
+  height:100%;
+}
+
+
+#titles{
+  text-align: center;
+  color: white;
+  font-weight: 300px;
+  font-size: 45px;
+}
+#subtitle{
+  text-align: center;
+  color: white;
+  font-weight: 30;
+  font-size: 18px;
+}
+#iphonex{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#logo{
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.topnav a{
+  display: inline-inline-block;
+  float: right;
+  padding: 15px 15px;
+  color: grey;
+  text-align:center;
+  font-size: 15px;
+}
