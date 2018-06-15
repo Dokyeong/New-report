@@ -36,24 +36,6 @@ body{
 
 }
 
-.topnav{
-  display: inline-block;
-  float: right;
-  width: 55%;
-  margin-top: 12%;
-  font-size: 18px;
-}
-
-.topnav a{
-  padding: 20px 20px;
-  color: #473c3d;
-}
-
-.topnav a:hover{
-  color: grey;
-}
-
-
 #clients_parent{
   text-align: center;
 }
@@ -80,8 +62,6 @@ body{
   color: #5702a5;
   font-size: 30px;
 }
-
-
 
 .box1{
   display: inline-block;
@@ -146,7 +126,7 @@ body{
   margin-top: 10%;
 }
 
-#discovery{
+.discovery{
   display: inline-block;
   width: 49%;
   float: right;
@@ -156,7 +136,7 @@ body{
   margin-top: 8%;
 }
 
-#details{
+.details{
   display: inline-block;
   float: right;
   width:32%;
@@ -257,4 +237,16 @@ font-weight: 100;
 .grey{
   color: grey;
   font-size: 92%;
+}
+
+#dnt{
+      margin-right: 5%;
+}
+
+#dualphone{
+  display: block;
+  float: left;
+  width:30%;
+  margin-left: 13%;
+  margin-top: 13%;
 }

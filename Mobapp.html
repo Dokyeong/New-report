@@ -16,35 +16,7 @@
   <section class="hero">
         <a href='http://beijing.mullenloweprofero.com/' target='_blank'><img id='logo' src='./images/logo.png' alt='logo'></a>
 
-    <!--NAV.VERSION1
-       <div class='topnav'>
-        <a href='http://beijing.mullenloweprofero.com/' target='_blank'>HOME</a>
-        <a href='http://beijing.mullenloweprofero.com/en/our-work' target='_blank'>WORK</a>
-        <a href='http://beijing.mullenloweprofero.com/en/our-services' target='_blank'>SERVICES</a>
-        <a href='http://beijing.mullenloweprofero.com/en/our-people/leadership' target='_blank'>PEOPLE</a>
-        <a href="http://www.mullenloweprofero.com/en/contact-us" target="_blank">CONTACT</a>
-      </div>
-
-    NAV.VERSION2
-      <nav class="navbar navbar-toggleable-lg bg-info navbar-inverse">
-        <div class='container'>
-          <button class='navbar-toggler' data-toggle='collapse' data-target='#mainNav'>
-            <span class='navbar-toggler-icon'></span>
-          </button>
-          <div class='collapse navbar-collapse' id='mainNav'>
-            <div class='navbar-nav'>
-              <a class='nav-item nav-link active' href='http://beijing.mullenloweprofero.com/' target="_blank">HOME</a>
-              <a class='nav-item nav-link' href='http://beijing.mullenloweprofero.com/en/our-work' target='_blank'>WORK</a>
-              <a class='nav-item nav-link' href='http://beijing.mullenloweprofero.com/en/our-services' target='_blank'>SERVICES</a>
-              <a class='nav-item nav-link' href='http://beijing.mullenloweprofero.com/en/our-people/leadership' target='_blank'>PEOPLE</a>
-              <a class='nav-item nav-link' href="http://www.mullenloweprofero.com/en/contact-us" target="_blank">CONTACT</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-  -->
-
-  <nav class="navbar navbar-expand-lg navbar-light">
+  <nav class="navbar navbar-expand-lg navbar-light" id='dnt'>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -132,14 +104,32 @@
     <img id='persp'src='./images/perspective.png' alt='perspective'>
   </div>
 
-  <div id='discovery'>
+  <div class='discovery'>
     Discover our App
   </div>
-  <div id='details'>
+  <div class='details'>
           <p>Lorem ipsum dolor sit amet consectetur,adipiscing elit.
       <br>Obcaecativel exercitationem eveniet vero maxime ratione</p>
   </div>
-  <div>
+  <div class="modal fade" id="modal_one" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>blah blah blah</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--  <div>
   <button id='read'><strong>Read More</strong></button>
   </div>
 <div id="myModal" class="modal">
@@ -147,7 +137,7 @@
     <span class="close">&times;</span>
     <p>Some text in the Modal..</p>
   </div>
-
+-->
 </section>
 
 <section class='place'>
@@ -192,11 +182,55 @@
  </div>
 </section>
 
+<section>
+  <div>
+  <img id='dualphone' src='./images/dualphone.png' alt='dualphone'>
+</div>
+  <div class='discovery'>
+    Launch your App
+  </div>
+  <div class='details'>
+    <p></p>
+          <p>Lorem ipsum dolor sit amet consectetur,adipiscing elit.
+      <br>Obcaecativel exercitationem eveniet vero maxime ratione</p>
+  </div>
 
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_one">
+  Read More
+</button>
+
+<div class="modal fade" id="modal_one" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>blah blah blah</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--  <div>
+  <button class='read'><strong>Read More</strong></button>
+  </div>
+<div class="myModal" class="modal">
+  <div class="modalcont">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+</section>
+-->
 
 
 <script>
-    var modal = document.getElementById('myModal');
+  /*  var modal = document.getElementById('myModal');
 
     var btn = document.getElementById("read");
 
@@ -214,7 +248,8 @@
         if (event.target == modal) {
             modal.style.display = "none";
         }
-    }
+    } */
+
 
     /*  setInterval("auto", function(){
       $("#iphonex").animate({opacity:0},3000,"linear",function(){
@@ -222,6 +257,7 @@
     });
     auto();},2000);
    */
+
 </script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
